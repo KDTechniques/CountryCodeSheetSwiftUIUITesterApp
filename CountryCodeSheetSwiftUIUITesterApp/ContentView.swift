@@ -6,16 +6,31 @@
 //
 
 import SwiftUI
+import CountryCodeSheetSwiftUI
 
 struct ContentView: View {
+    
+    @State private var isPresented: Bool = true
+    @State private var selectedCountryCode: CountryModel?
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 20) {
+            Button("Toggle") {
+                isPresented.toggle()
+            }
+            
+            if let selectedCountryCode {
+                VStack(alignment: .leading) {
+                    Text("Name: \(selectedCountryCode.name)")
+                    Text("Dial Code: \(selectedCountryCode.dialCode)")
+                    Text("Flag: \(selectedCountryCode.flag)")
+                    Text("Country Code: \(selectedCountryCode.countryCode)")
+                }
+            }
         }
-        .padding()
+        .sheet(isPresented: $isPresented) {
+            CountryCodeSheetView(isPresented: $isPresented, selectedCountryCode: $selectedCountryCode)
+        }
     }
 }
 

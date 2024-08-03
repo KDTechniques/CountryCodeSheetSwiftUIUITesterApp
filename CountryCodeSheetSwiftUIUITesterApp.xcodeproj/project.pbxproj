@@ -3,8 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		0B6632E12C5EC69700B877A1 /* CountryCodeSheetSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0B6632E02C5EC69700B877A1 /* CountryCodeSheetSwiftUI */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		0B6632B32C5EC5FB00B877A1 /* PBXContainerItemProxy */ = {
@@ -31,7 +35,6 @@
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0B6632A42C5EC5F800B877A1 /* CountryCodeSheetSwiftUIUITesterApp */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CountryCodeSheetSwiftUIUITesterApp; sourceTree = "<group>"; };
-		0B6632B52C5EC5FB00B877A1 /* CountryCodeSheetSwiftUIUITesterAppTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CountryCodeSheetSwiftUIUITesterAppTests; sourceTree = "<group>"; };
 		0B6632BF2C5EC5FB00B877A1 /* CountryCodeSheetSwiftUIUITesterAppUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CountryCodeSheetSwiftUIUITesterAppUITests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -40,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B6632E12C5EC69700B877A1 /* CountryCodeSheetSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				0B6632A42C5EC5F800B877A1 /* CountryCodeSheetSwiftUIUITesterApp */,
-				0B6632B52C5EC5FB00B877A1 /* CountryCodeSheetSwiftUIUITesterAppTests */,
 				0B6632BF2C5EC5FB00B877A1 /* CountryCodeSheetSwiftUIUITesterAppUITests */,
 				0B6632A32C5EC5F800B877A1 /* Products */,
 			);
@@ -100,6 +103,7 @@
 			);
 			name = CountryCodeSheetSwiftUIUITesterApp;
 			packageProductDependencies = (
+				0B6632E02C5EC69700B877A1 /* CountryCodeSheetSwiftUI */,
 			);
 			productName = CountryCodeSheetSwiftUIUITesterApp;
 			productReference = 0B6632A22C5EC5F800B877A1 /* CountryCodeSheetSwiftUIUITesterApp.app */;
@@ -117,9 +121,6 @@
 			);
 			dependencies = (
 				0B6632B42C5EC5FB00B877A1 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				0B6632B52C5EC5FB00B877A1 /* CountryCodeSheetSwiftUIUITesterAppTests */,
 			);
 			name = CountryCodeSheetSwiftUIUITesterAppTests;
 			packageProductDependencies = (
@@ -183,6 +184,9 @@
 				Base,
 			);
 			mainGroup = 0B6632992C5EC5F700B877A1;
+			packageReferences = (
+				0B6632DF2C5EC69700B877A1 /* XCLocalSwiftPackageReference "../country-code-sheet-swiftui" */,
+			);
 			productRefGroup = 0B6632A32C5EC5F800B877A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -545,6 +549,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		0B6632DF2C5EC69700B877A1 /* XCLocalSwiftPackageReference "../country-code-sheet-swiftui" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../country-code-sheet-swiftui";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B6632E02C5EC69700B877A1 /* CountryCodeSheetSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CountryCodeSheetSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0B66329A2C5EC5F700B877A1 /* Project object */;
 }
